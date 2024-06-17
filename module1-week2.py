@@ -32,8 +32,6 @@ def character_count(word):
 
 def count_word(file_path):
     counter = {}
-
-    # Your Code Here
     with open(file_path, 'r') as file:
         data = file.read().lower().split()
         for word in data:
@@ -41,8 +39,6 @@ def count_word(file_path):
                 counter[word] += 1
             else:
                 counter[word] = 1
-    # End Code Here
-
     return counter
 
 
