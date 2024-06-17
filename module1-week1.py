@@ -130,7 +130,6 @@ def regression_loss():
         exit()
     n = int(n)
 
-    # Processing
     reply = input('Loss name ( MAE | MSE | RMSE ): ').strip().upper()
     if reply == 'MAE':
         mae(n)
